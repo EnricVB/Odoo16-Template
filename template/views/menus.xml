@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+
+        <!--
+        # El orden influye para mostrar las paginas. Controlado desde views.xml
+
+        <menuitem id="menu_module"               # Change id
+            name="Example"
+            sequence="1"/>                              # If 1, goes to this on restart
+
+        <menuitem id="menu_model_creation"           # Change id
+            name="Model"
+            parent="menu_module"
+            sequence="1"/>
+
+            <menuitem id="menu_create_model"               # Change id
+                name="Create new Model"
+                parent="menu_model_creation"             
+                sequence="1"
+                action="create_model_action_window"/>
+        
+        -->
+    </data>
+</odoo>

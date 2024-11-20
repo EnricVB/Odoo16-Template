@@ -1,0 +1,68 @@
+<odoo>
+  <data>
+    <!-- 
+    
+    ### PAGINA LISTADO DE ELEMENTOS
+
+    <record id="model_tree" model="ir.ui.view">         # Change id
+      <field name="name">module.model.tree</field>      # module.model.tree
+      <field name="model">module.model</field>          # module.model
+      <field name="arch" type="xml">
+
+        ## LISTA DE ELEMENTOS
+
+        <tree>
+          <field name="name"/>  # Variable to show
+        </tree>
+      </field>
+    </record>
+
+
+    ### PAGINA CREACIÓN DE ELEMENTO
+    
+    <record id="model_form" model="ir.ui.view">         # Change id
+      <field name="name">module.model.form</field>      # module.model.form
+      <field name="model">module.model</field>          # module.model
+      <field name="arch" type="xml">
+        <form>
+          <sheet>                                       # Formulario
+            <group name="group_top">                    # Position of group over Sheet
+              <group name="group_left">
+                <field name="name"/>                    # Variable to show
+              </group>
+
+              <group name="group_right">
+                <field name="description"/>
+              </group>
+            </group>
+
+            <group name="group_bottom">
+              <field name="image" widget="image"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    
+    -->
+
+
+
+
+    <!--
+
+    ### OPCIONES DE BOTONES
+
+    <record model="ir.actions.act_window" id="create_model_action_window">   # ir.actions.act_window to change page  # create_model_action_window checks in menuitem for id. To switch to page.
+      <field name="name">Name</field>                   # Variable name
+      <field name="res_model">module.model</field>      # Model to show
+      <field name="view_mode">tree,form</field>         # Indica el orden que muestra las pantallas de menus.xml
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">Model</p>       # Title
+        <p>Click 'Crear' para añadir nuevos elementos.</p>  # Content
+      </field>
+    </record>
+
+    -->
+  </data>
+</odoo>
